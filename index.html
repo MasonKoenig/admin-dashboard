@@ -10,17 +10,31 @@
   <body>
     <div class="header">
       <div class="top">
-        <form action="#">
-          <button id="search">#findImg</button>
-          <input type="text" id="search" />
+        <form class="search" action="#">
+          <button id="searchButton">
+            <img
+              class="icon"
+              src="Assets/search_black_24dp.svg"
+              alt="Notification icon"
+            />
+          </button>
+          <input type="text" id="searchText" />
         </form>
-        <button class="notification">#notifyImg</button>
-        <img
-          src="Assets/programmer.png"
-          alt="Users profile image"
-          class="userImg"
-        />
-        <h2 class="userName">Morgan Oakley</h2>
+        <div class="top-right">
+          <button class="notification">
+            <img
+              class="icon"
+              src="Assets/notifications_active_black_24dp.svg"
+              alt="Notification icon"
+            />
+          </button>
+          <img
+            src="Assets/programmer.png"
+            alt="Users profile image"
+            class="userImg"
+          />
+          <h2 class="userName">Morgan Oakley</h2>
+        </div>
       </div>
       <div class="bottom">
         <img src="Assets/programmer.png" alt="Users profile image" />

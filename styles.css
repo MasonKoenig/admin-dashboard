@@ -2,10 +2,10 @@
 
 root {
   --black: #171212;
-  --grey: #cccccc;
-  --white: #fffbff;
-  --blue: #607196;
-  --yellow: #ffbf00;
+  --grey: #e2e8f0;
+  --white: #ffffff;
+  --blue: #1992d4;
+  --yellow: #1992d4;
 }
 
 * {
@@ -20,6 +20,15 @@ div {
 
 img {
   height: 3rem;
+}
+
+.icon {
+  height: 2rem;
+}
+
+button {
+  background-color: var(--white);
+  border: none;
 }
 
 body {
@@ -37,8 +46,42 @@ body {
 
 .header > .top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  height: 2rem;
+}
+
+#searchButton {
+  padding-inline: 1rem;
+}
+
+#searchText {
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 1rem;
+  width: 80ch;
+}
+
+.top-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 6rem;
+}
+
+.top-right > * {
+  padding-inline: 1rem;
+}
+
+.userImg {
+  background-color: #facc15;
+  aspect-ratio: 1 / 1;
 }
 
 .sidebar {
