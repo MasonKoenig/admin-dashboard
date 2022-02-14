@@ -129,8 +129,37 @@ a:visited {
   background-color: var(--white);
   box-shadow: 0px 4px 5px -2px var(--dark-grey);
   z-index: 1;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+}
+
+.header > .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > .top > .left,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchBTN {
+  height: 2rem;
+  width: 2rem;
+  background: url(Assets/Icons/search_black_24dp.svg) no-repeat center
+    center/1.5rem;
+  margin-left: 3rem;
+  border: none;
+}
+
+#searchFLD {
+  height: 1.5rem;
+  width: 30rem;
+  margin-inline: 0rem;
+  padding-inline: 1rem;
+  border: none;
+  background-color: var(--dark-grey);
+  border-radius: 0.75rem;
 }
 
 .content {
